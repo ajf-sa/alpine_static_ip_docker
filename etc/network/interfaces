@@ -1,0 +1,15 @@
+auto lo
+iface lo inet loopback
+
+#auto eth0
+#iface eth0 inet dhcp
+#       hostname alpine
+
+auto eth0
+iface eth0 inet static
+        hostname alpine
+        address 10.128.40.120
+        netmask 255.255.255.0
+        network 10.128.40.0
+        gateway 10.128.40.1
+        broadcast 10.128.40.255
